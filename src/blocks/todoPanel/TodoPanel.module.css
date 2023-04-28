@@ -1,0 +1,104 @@
+.todo_panel_container {
+  background-color: white;
+  box-shadow: 0px 8px 11px -8px rgba(34, 60, 80, 0.09);
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 25px 20px;
+  border-radius: 5px;
+}
+
+.fields_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.field_container {
+  width: 100%;
+}
+
+.field_container label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 15px;
+}
+
+.field_container input {
+  font-size: 15px;
+  padding: 10px 5px;
+  border-radius: 2px;
+  border: 0.5px solid black;
+}
+
+.button_container {
+  width: 100%;
+  text-align: right;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .todo_panel_container {
+    margin-bottom: 8px;
+    width: 350px;
+    padding: 16px 15px;
+  }
+  
+  .fields_container {
+    gap: 10px;
+    display: block;
+  }
+  
+  .field_container {
+    margin: 0 auto;
+    width: 350px;
+  }
+  
+  .field_container label {
+    gap: 5px;
+    font-size: 16px;
+  }
+  
+  .field_container input {
+    font-size: 14px;
+    padding: 8px 5px;
+  }
+  
+  .button_container {
+    width: 100%;
+    margin-top: 8px;
+  }
+}
+
+@media screen and (min-width: 868px) {
+  .todo_panel_container {
+    margin: 0 6px 12px 6px;
+    width: calc(100%-12px);
+    padding: 25px 16px;
+  }
+  
+  .fields_container {
+    gap: 15px;
+  }
+  
+  .field_container {
+    width: 100%;
+  }
+  
+  .field_container label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 18px;
+  }
+  
+  .field_container input {
+    font-size: 16px;
+    padding: 12px 5px;
+  }
+  
+  .button_container {
+    width: 100%;
+    margin-top: 12px;
+  }
+}

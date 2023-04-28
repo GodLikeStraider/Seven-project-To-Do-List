@@ -1,0 +1,44 @@
+.app_container {
+  margin: 30px auto 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+@media screen and (max-width: 480px) {
+  .app_container {
+    margin: 5px 10px 5px 10px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 868px) {
+  .app_container {
+    margin: 5px 70px 5px 30px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin: 0 auto;
+  }
+}
