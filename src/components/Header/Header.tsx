@@ -10,5 +10,6 @@ export const Header: React.FC<HeaderProps> = ({ todoCount }) => (
     <h1 className={styles.header_title}>
       Общее количество задач: <b>{todoCount}</b>
     </h1>
+    <button className={styles.button_urn}>Корзина</button>
   </div>
 );

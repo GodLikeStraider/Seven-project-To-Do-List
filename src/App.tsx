@@ -34,6 +34,7 @@ export const App = () => {
       isLoading
     })
   };
+  
   const deleteTodo = (id:any) => {
       handleDialog("Вы действительно хотите удалить задачу?", true);
       idTodoRef.current = id;

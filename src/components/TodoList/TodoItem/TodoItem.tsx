@@ -8,7 +8,6 @@ interface TodoItemProps {
   checkTodo: (id: Todo['id']) => void;
   selectTodoIdForEdit: (id: Todo['id']) => void;
 }
-
 export const TodoItem: React.FC<TodoItemProps> = ({
   todo,
   deleteTodo,
@@ -34,7 +33,7 @@ export const TodoItem: React.FC<TodoItemProps> = ({
     </div>
     <div className={styles.todo_item_button_container}>
       <Button color='orange' onClick={() => selectTodoIdForEdit(todo.id)}>
-        Добавить
+        Редактировать
       </Button>
       <Button color='red' onClick={() => deleteTodo(todo.id)}>
         Удалить

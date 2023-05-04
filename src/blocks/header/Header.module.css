@@ -1,10 +1,24 @@
 .header_container {
+  display: flex;
   text-align: center;
 }
 
 .header_title {
   font-size: 25px;
   font-weight: 400;
+}
+
+.button_urn{
+  background-color: white;
+  border: 1px solid rgba(210, 102, 25, 0.5);
+  border-radius: 5px;
+  color: #d27c19;
+  width: 75px;
+  height: 30px;
+}
+.button_urn:hover{
+  opacity: 70%;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 480px) {
